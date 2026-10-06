@@ -5,12 +5,20 @@ header{display:flex;gap:10px;align-items:center;padding:12px 18px;background:rgb
 .brand{font-weight:800;font-size:20px;letter-spacing:-.5px;color:#5b5bd6}.brand i{color:#ff7eb6;font-style:normal}
 #url{flex:1;min-width:120px;padding:9px 14px;border-radius:12px;border:1px solid #e3def7;background:#fff;font:inherit;outline:none}
 #url:focus{border-color:#8f8cff;box-shadow:0 0 0 3px rgba(143,140,255,.2)}
+#history{min-width:160px;padding:9px 12px;border-radius:12px;border:1px solid #e3def7;background:#fff;color:#2b2b3d;font:inherit;outline:none}
 .chip{display:flex;gap:6px;align-items:center;padding:7px 12px;background:#fff;border-radius:12px;border:1px solid #e3def7;white-space:nowrap}
 .chip b{width:34px;font-weight:600;color:#5b5bd6}
-button,select{font:inherit;border:1px solid #e3def7;background:#fff;border-radius:12px;padding:8px 13px;cursor:pointer;color:#2b2b3d;transition:.15s}
+button,select,input{font:inherit;border:1px solid #e3def7;background:#fff;border-radius:12px;padding:8px 13px;color:#2b2b3d;transition:.15s}
 button:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(91,91,214,.15)}
 button:disabled{opacity:.5;cursor:default}
 button.primary{background:linear-gradient(135deg,#8f8cff,#ff8fc2);color:#fff;border:0;font-weight:600}
+button.secondary{background:#f7f3ff;color:#4f4ac4;border-color:#e0d9ff}
+input{outline:none}
+input:focus{border-color:#8f8cff;box-shadow:0 0 0 3px rgba(143,140,255,.2)}
+.panel{padding:10px 18px 0;background:rgba(255,255,255,.2)}
+.panel-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:rgba(255,255,255,.7);padding:10px 12px;border:1px solid rgba(120,110,200,.12);border-radius:16px}
+.panel-row input{min-width:110px;flex:1 1 120px}
+#custom-name{flex:2 1 180px}
 #stage{flex:1;display:flex;gap:32px;padding:28px;overflow:auto;align-items:flex-start}
 #stage>:first-child{margin-left:auto}#stage>:last-child{margin-right:auto}
 .dev{flex:none}

@@ -3,10 +3,23 @@
 <header>
   <div class="brand">viewly<i>.</i></div>
   <input id="url" spellcheck="false" placeholder="https://…">
+  <button id="save-url" class="secondary">Save</button>
+  <select id="history" aria-label="Recent URLs">
+    <option value="">Recent URLs</option>
+  </select>
   <label class="chip">Scale <input type="range" id="scale" min="30" max="100"><b id="sv"></b></label>
   <label class="chip"><input type="checkbox" id="sync"> Sync</label>
   <button id="add">+ Device</button>
   <button id="shot" class="primary">📸 Screenshot</button>
 </header>
+<div class="panel">
+  <div class="panel-row">
+    <input id="custom-name" type="text" placeholder="Device name" maxlength="24">
+    <input id="custom-width" type="number" min="200" max="2000" value="390" placeholder="Width">
+    <input id="custom-height" type="number" min="200" max="3000" value="844" placeholder="Height">
+    <input id="custom-radius" type="number" min="0" max="100" value="38" placeholder="Radius">
+    <button id="add-custom" class="primary">+ Custom device</button>
+  </div>
+</div>
 <main id="stage"></main>
 <script src="viewer.js"></script></body></html>
